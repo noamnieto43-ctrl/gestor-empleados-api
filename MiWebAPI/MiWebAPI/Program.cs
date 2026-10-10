@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<EmpleadoData>();
 builder.Services.AddSingleton<PRODUCTO_DETALLE>();
 builder.Services.AddScoped<ProductoData>();
+builder.Services.AddSingleton<ProvedorData>();
 
 builder.Services.AddCors(options =>
 {
