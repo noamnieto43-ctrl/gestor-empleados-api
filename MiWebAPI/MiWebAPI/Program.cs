@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<PlatilloData>();
 builder.Services.AddSingleton<EmpleadoData>();
 builder.Services.AddSingleton<PRODUCTO_DETALLE>();
 builder.Services.AddScoped<ProductoData>();
